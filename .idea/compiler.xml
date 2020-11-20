@@ -9,8 +9,8 @@
         <module name="CheckerSolution" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CheckerSolution" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="CheckerSolution" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
