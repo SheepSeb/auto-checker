@@ -30,11 +30,12 @@ public class File_Check {
     public int howManyAreCorrect() throws IOException {
         int correct = 0;
         String x = dirOutput.getAbsolutePath();
-        String y = dirOutput.getAbsolutePath();
+        String y = dirCorrect.getAbsolutePath();
+
         for (int i = 0; i < numberFiles; i++)
         {
-            File fileOut = new File(x + String.valueOf(i) + ".txt");//modificat .out cu .txt
-            File fileCor = new File(y + String.valueOf(i) + ".txt");//pt testare
+            File fileOut = new File(x + "\\" + String.valueOf(i) + ".out");//modificat .out cu .txt
+            File fileCor = new File(y + "\\" + String.valueOf(i) + ".out");//pt testare
 
             if (sameContent(fileOut,fileCor))
                 correct++;
