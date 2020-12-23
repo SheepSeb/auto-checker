@@ -1,3 +1,7 @@
+import org.apache.commons.io.FileUtils;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
 
@@ -14,17 +18,12 @@ public class MainTest {
 
         String directory = System.getProperty("user.dir");
         directory = directory + "\\CheckerSoluion\\src\\test\\java\\";
-        directory = directory.replace("\\","/");
+        String output = "./a.out";
 
-        String fileName = "testrun.java";
-
-        PrintStream fileOut = new PrintStream("./out.txt");
-        System.setOut(fileOut);
-
-        System.out.println("Ceva");
-        System.out.println(directory);
-
-        runFile("C:\\Users\\naese\\Desktop\\Repos\\autochecker\\CheckerSolution\\src\\test\\java","\\testrun.java");
+        ReadOutput readOutput = new ReadOutput(directory,output);
+        readOutput.redirectOutput(readOutput.getOutput());
+        testrun.main(args);
+        System.out.println("new line");
 
     }
 

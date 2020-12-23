@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CheckerSolution/CheckerSolution.iml" filepath="$PROJECT_DIR$/CheckerSolution/CheckerSolution.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/auto-checker.iml" filepath="$PROJECT_DIR$/.idea/auto-checker.iml" />
     </modules>
   </component>
 </project>
