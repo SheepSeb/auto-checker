@@ -1,14 +1,14 @@
 
 
 import java.io.IOException;
-
+import java.io.File;
 public class MainTest {
     public static void main(String[] args) throws IOException {
-        File myFile = new File();
-        File secondFile = new File();
+        File myFile = new File("C:\\Users\\naese\\Desktop\\Autochecker\\auto-checker-main\\auto-checker-main\\Ground\\ref");
+        File secondFile = new File("C:\\Users\\naese\\Desktop\\Autochecker\\auto-checker-main\\auto-checker-main\\Ground\\out\\sursa4");
 
-        //Doesn't go to the path gets IOException
-        myFile.writeInFile("src/test/file_testing/text_crt.txt");
+        File_Check file_check = new File_Check(myFile,secondFile,myFile.list().length);
 
+        System.out.println(file_check.howManyAreCorrect());
     }
 }
